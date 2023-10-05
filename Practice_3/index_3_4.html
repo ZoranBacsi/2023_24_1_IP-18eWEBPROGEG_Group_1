@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. gyakorlat</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            height: 10px;
+            width: 10px;
+            border-width: 0px;
+        }
+        #paint {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pixel Painter</h1>
+    <div id="controls">
+        Szélesség: <input type="number" id="width" value="40"><br>
+        Magasság: <input type="number" id="height" value="30"><br>
+        <button id="start">OK</button>
+    </div>
+    <div id="paint">
+        Szín: <input type="color"><br>
+        <table></table>
+    </div>
+    <script src="practice_3_4.js"></script>
+</body>
+</html>
