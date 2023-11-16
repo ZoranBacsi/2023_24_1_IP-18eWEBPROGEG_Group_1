@@ -1,4 +1,12 @@
-<?php 
+
+<!-- 
+    1. Feladat
+    Írjuk meg ciklussal és rekurzióval is azt a függvényt, amely kiszámítja egy adott egész szám faktoriálisát!
+    (Mi történik, ha nem egészet adunk neki?)
+-->
+
+<h3>1. Feladat</h3>
+<?php
     // declare(strict_types= 1);
     function fact_rec(int $n) {
         if( $n == 0) return 1;
@@ -11,14 +19,25 @@
         return $r;
     }
 ?>
-<h3>1. Feladat</h3>
+<!-- Egyszerűbb php blokk -->
 <?= fact_rec(5) . "<br>"?>
 <?= fact_c(5) . "<br>"?>
+
+<!--  
+    2. Feladat
+    Írassuk ki egyre kisebb címsorokkal (h1-tol h6-ig) a Helló világ! szöveget! 
+-->
 
 <h3>2. Feladat</h3>
 <?php 
     for($i = 1; $i <= 6; $i++) echo "<h{$i}>Hello Világ!</h{$i}>";
 ?>
+
+<!-- 
+    3. Feladat
+    Adott (beégetett) egy egész számokat tartalmazó tömb. Válogassuk ki belőle a páros számokat, majd
+emeljük őket négyzetre! 
+-->
 
 <h3>3. Feladat</h3>
 <?php 
@@ -29,6 +48,13 @@
     // PHP 7.4 and above
     print_r(array_map(fn($x) => $x * $x, array_filter($t, fn($x) => $x % 2 == 0)));
 ?>
+
+<!-- 
+    4. Feladat 
+    Tömbfüggvények tekintetében a PHP-tol sem teljesen idegenek a már JavaScriptbol ismert map, filter és reduce függvények megfeleloi, azonban nagyon hiányzik nekünk az every. 
+    Írjuk meg az array_every függvényt, amely szigorúan egy tömböt és egy függvényt (callable) kapva eldönti, hogy a callable a tömb minden elemére igazat ad-e! 
+    A feladatot oldjuk meg legalább kétféleképpen: foreach ciklus és iterátorfüggvények használatával is! 
+-->
 
 <h3>4. Feladat</h3>
 <?php 
@@ -54,6 +80,11 @@
 
     var_dump(array_every2($test1,"test_even"));
 ?>
+<!-- 
+    5. Feladat 
+    Adott egy mémeket tartalmazó tömb. Jelenítsük meg őket felsorolásként!  
+-->
+
 <h3> 5. feladat</h3>
 <?php 
 $quotes = ["Szia, Lajos!","This is Sparta!","Én csak feljárok ide!","Hogy volt merszed?","Többet nem Gyula!","Még el sem nyerted méltó büntetésed"];
@@ -64,6 +95,11 @@ $quotes = ["Szia, Lajos!","This is Sparta!","Én csak feljárok ide!","Hogy volt
         <li><?= $e ?></li>
     <?php endforeach; ?>
 </ul>
+
+<!--
+    6.FeladatKészítsünk tesztrendszert! Egy változóban el kell tárolni a kérdések listáját, az egyes kérdésekhez tartozó lehetséges válaszokat (amelyek betujele is megadható) és a helyes válasz jelét. 
+    Generáljunk HTML űrlapot, ahol jelölve van a helyes megoldás!
+-->
 
 <h3>6. Feladat</h3>
 
