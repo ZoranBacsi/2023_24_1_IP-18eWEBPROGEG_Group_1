@@ -16,5 +16,32 @@
         "gender": "m",
         "regdate": "1999-02-28",
         "notes": ""
+    },
+    "102526632": {
+        "fullname": "Tank Aranka",
+        "email": "tank.aranka@gmail.com",
+        "taj": "102526632",
+        "age": 45,
+        "gender": "f",
+        "regdate": "2023-11-29",
+        "notes": ""
+    },
+    "234567898": {
+        "fullname": "Poci Oszvald",
+        "email": "pocioszi@citromail.hu",
+        "taj": "234567898",
+        "age": 34,
+        "gender": "m",
+        "regdate": "2023-11-29",
+        "notes": ""
+    },
+    "100000000": {
+        "fullname": "Gipsz Jakab",
+        "email": "gipsz@jakab.hu",
+        "taj": "100000000",
+        "age": 12,
+        "gender": "m",
+        "regdate": "2023-11-29",
+        "notes": ""
     }
 }
