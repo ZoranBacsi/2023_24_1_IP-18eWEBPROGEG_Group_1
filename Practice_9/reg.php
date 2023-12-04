@@ -65,7 +65,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regisztráció</title>
 </head>
-    <?php
+<?php
         if(count($_POST) > 0 && count($errors) == 0){
             echo "<span style='color: green'> Mentés sikeres! </span>";
 
@@ -77,10 +77,8 @@
             $accept = false;
             $notes = '';
             
-            sleep(5);
-            header('location: index.php');
         }
-    ?>
+?>
     <form action="reg.php" method="post">
         Teljes név: <input type="text" name="fullname" value="<?= $fullname ?>"> <?= $errors['fullname'] ?? '' ?><br>
         E-mail: <input type="text" name="email" value="<?= $email ?>">  <?= $errors['email'] ?? '' ?><br>
